@@ -1,4 +1,4 @@
-# Desafio 18 da comunidade Codelândia no Discord
+# Desafio 1 da comunidade Codelândia no Discord
 
 ## 💻 _Blog_
 
