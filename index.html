@@ -17,7 +17,7 @@
                 <a href="#box1"> blog </a>
             </nav>
 
-            <input type="text" class="header-search" placeholder="Pesquisar no blog">
+            <input type="text" class="header-search" id="searchInput" onkeyup="filterCard();" placeholder="Pesquisar no blog">
 
     </header>
 
@@ -28,7 +28,7 @@
                 <h6>02 de jul, 2021</h6>
                 <img src="./img/heart.svg" alt="like">
             </div>
-            <div>
+            <div class="texts">
                 <h2 class="title">Agora é oficial: o Windows 11 está vindo</h2>
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.</p>
             </div>
@@ -39,7 +39,7 @@
                 <h6>02 de jul, 2021</h6>
                 <img src="./img/heart.svg" alt="like">
             </div>
-            <div>
+            <div class="texts">
                 <h2 class="title">Tim Berners-Lee vai leiloar código-fonte da web</h2>
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum ullamcorper libero.</p>
             </div>
@@ -50,7 +50,7 @@
                 <h6>02 de jul, 2021</h6>
                 <img src="./img/heart.svg" alt="like">
             </div>
-            <div>
+            <div class="texts">
                 <h2 class="title">Tem Firefox novo no pedaço e você vai querer migrar</h2>
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est.</p>
             </div>
@@ -61,28 +61,28 @@
                 <h6>02 de jul, 2021</h6>
                 <img src="./img/heart.svg" alt="like">
             </div>
-            <div>
+            <div class="texts">
                 <h2 class="title">John McAfee, criador do antivírus McAfee, morre</h2>
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum ullamcorper libero.</p>
             </div>
         </section>
 
     </main>
-
+    <script src="./js/script.js"></script>
 </body>
 
     <script>
         const sr = ScrollReveal({
             origin: 'top',
-            distance: '50px',
-            duration: 2000,
+            distance: '40px',
+            duration: 1000,
             reset: false
         });
 
         ScrollReveal().reveal('.box', { delay: 200 });
-        ScrollReveal().reveal('.box-header', { delay: 400 });
-        ScrollReveal().reveal('.title', { delay: 500 });
-        ScrollReveal().reveal('.description', { delay: 600 });
+        ScrollReveal().reveal('.box-header', { delay: 300 });
+        ScrollReveal().reveal('.title', { delay: 400 });
+        ScrollReveal().reveal('.description', { delay: 400 });
     </script>
 
 </html>
