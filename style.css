@@ -87,7 +87,6 @@ body{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.089);
     color: var(--text);
     font-weight: 600;
-    cursor: pointer;
     text-align: start;
 }
 
@@ -112,6 +111,54 @@ body{
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 30px;
+}
+
+.box-header svg path.fav{
+    fill: #574ae8;
+}
+
+.box-header svg path:hover{
+    fill: #574ae886;
+    cursor: pointer;
+}
+
+.box-header .tooltip::before, .box-header .tooltip::after{
+    --scale: 0;
+
+    position: absolute;
+    top: -30px;
+    right: -40px;
+    transform: scale(var(--scale));
+    transition: 100ms transform;
+    transform-origin: bottom center;
+    z-index: -1;
+}
+
+.box-header .tooltip::before{
+    content: attr(data-tooltip);
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 500;
+    letter-spacing: .5px;
+    border-radius: 5px;
+    width: 109px;
+    height: 22px;
+    background: #574ae8;
+}
+
+.box-header .tooltip:hover::before,
+.box-header .tooltip:hover::after{
+    --scale: 1;
+}
+
+.box-header .tooltip::after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 2px;
+    border: 10px solid transparent;
+    border-top-color: #574ae8;
+    transform-origin: top center;
 }
 
 @media only screen and (max-width: 930px) {
