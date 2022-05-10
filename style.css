@@ -32,7 +32,8 @@ body{
 
 .header-nav{
     display: flex;
-    gap: 600px;
+    width: 62%;
+    justify-content: space-between;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 24px;
     color: var(--white);
@@ -161,6 +162,10 @@ body{
     transform-origin: top center;
 }
 
+.models{
+    display: none;
+}
+
 @media only screen and (max-width: 930px) {
 
     .header-main{
@@ -169,9 +174,7 @@ body{
 
     .header-nav{
         margin-top: 20px;
-        width: 100%;
-        gap: 80px;
-        justify-content: center;
+        width: 90%;
     }
 
     .header-search{

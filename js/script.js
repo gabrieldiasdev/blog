@@ -1,3 +1,15 @@
+cardsJSON.map((item, index) =>{
+    let cardItem = document.querySelector('.box').cloneNode(true);
+
+    document.querySelector('.content').append(cardItem);
+    
+    cardItem.querySelector('.box-header-date').innerHTML = item.date;
+    cardItem.querySelector('.heart-svg').setAttribute('id', item.id);
+    cardItem.querySelector('.title').innerHTML = item.title;
+    cardItem.querySelector('.description').innerHTML = item.description;
+});
+
+
 const filterCard = () => {
     const input = document.getElementById("searchInput").value.toUpperCase();
     const cards = document.getElementsByClassName("box");
@@ -31,7 +43,6 @@ const handleFavorite = () => {
                 favorites.push(id);
                 item.classList.add('fav');
                 item.parentNode.parentNode.setAttribute('data-tooltip', 'Desfavoritar')
-                console.log(item.parentNode.parentNode);
             } else {
                 favorites.splice(index, 1);
                 item.classList.remove('fav');

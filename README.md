@@ -2,7 +2,7 @@
 
 ## 💻 _Blog_
 
-Repositório criado para armazenar o desafio 1 proposto por Iuri Silva criador da comunidade Codelândia no Discord.\
+Repositório criado para armazenar o desafio 1 proposto por Iuri Silva criador da comunidade Codelândia no Discord.
 
 ## 💻  Projeto desenvolvido
 [Acesse o projeto](https://gabrieldiasdev.github.io/blog/)
